@@ -31,7 +31,7 @@
 .top_container
 {
     background-color: #191d20;
-    width: 100vw;
+    width: 100%;
     z-index: 99;
     position: relative;
 }
@@ -91,7 +91,7 @@
 .navigation_container
 {
     background-color: #fff;
-    width: 100vw;
+    width: 100%;
     height: 85px;
     display: flex;
     align-items: center;
@@ -260,7 +260,10 @@
     flex-direction: column;
     align-items: center;
 }
-.slide_content h1, .slide_content span, .slide_content h2, .slide_content a
+.slide_content h1, 
+.slide_content span, 
+.slide_content h2, 
+.slide_content a
 {
     color: #fff !important;
     font-size: 36px
@@ -367,7 +370,10 @@
     padding-bottom: 90px;
 }
 
-.welcome_container, .gallery_container, .menu_container
+.welcome_container, 
+.gallery_container, 
+.menu_container,
+.team_container > div
 {
     display: flex;
     flex-direction: column;
@@ -692,6 +698,12 @@
     width: 100%;
     margin-bottom: 48px;
 }
+
+.menu_container.standard_section
+{
+    margin-bottom: 0;
+}
+
 .row_menu
 {
     display: flex;
@@ -747,4 +759,228 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 30px;
+}
+
+.other_services_container .standard_width
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other_services_container
+{
+    background-color: #191d20;
+}
+
+.other_services_container img
+{
+    width: 500px;
+    height: auto;
+    margin-top: 25px;
+}
+
+.other_services_container .topic
+{
+    height: 50px;
+    border: 1px solid #494e51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.other_services_container .topic:hover
+{
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+
+.other_services_container .topic:nth-child(1)
+{
+    margin-top: 0;
+}
+
+.other_services_container .topic p,
+.other_services_container .topic i
+{
+    font-size: 14px;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.other_services_container .answer_topic
+{
+    border: 1px solid #494e51;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #bdbcbc !important;
+    padding: 32px 40px 32px 40px;
+    display: none;
+
+
+}
+
+
+.other_services_container .two_colmuns .right
+{
+    justify-content: flex-start;
+}
+
+.other_services_container .two_colmuns
+{
+    margin-top: 65px;
+}
+
+.team_container
+{
+    background-color: #ececec;
+}
+
+.team_cards
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+
+}
+
+.team_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team_img
+{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 2px solid #ff1200;
+    position: relative;
+    cursor: pointer;
+}
+
+.team_img img
+{
+    width: 266px;
+    height: 266px;
+    border-radius: 50%;
+}
+
+
+.team_title
+{
+    font-size: 20px;
+    color: #322d2d !important;
+    margin-top: 20px;
+}
+
+.team_description
+{
+    font-size: 14px;
+    color: #767070;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.team_img:hover .team_overlay_red
+{
+    display: flex;
+}
+
+.team_overlay_red
+{
+    display: none;
+    width: 266px;
+    height: 266px;    
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 18, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.team_container .two_colmuns
+{
+    margin-top: 60px;
+}
+
+.skill_title
+{
+    font-size: 14px;
+    color: #322d2d !important;
+}
+
+.skill_progress_bg
+{
+    width: 100%;
+    height: 10px;
+    background-color: #dcdcdc;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.skill_progress
+{
+    height: 10px;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#skillProgress1
+{
+    width: 95%;
+}
+
+#skillProgress2
+{
+    width: 86%;
+}
+
+#skillProgress3
+{
+    width: 90%;
+}
+
+#skillProgress4
+{
+    width: 83%;
+}
+
+#skillProgress5
+{
+    width: 80%;
+}
+
+.skill_progress p
+{
+    margin-top: -23px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #322d2d !important;
+}
+
+.team_container .two_colmuns .left
+{
+    margin-top: 35px;
+}
+
+.team_container .two_colmuns .right
+{
+    display: flex;
+    align-items: center;
+}
+.team_container .two_colmuns .right img
+{
+    width: 369px;
 }
