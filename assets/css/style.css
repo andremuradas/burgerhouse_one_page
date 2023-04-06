@@ -373,7 +373,8 @@
 .welcome_container, 
 .gallery_container, 
 .menu_container,
-.team_container > div
+.team_container > div,
+.blog_container > div
 {
     display: flex;
     flex-direction: column;
@@ -983,4 +984,47 @@
 .team_container .two_colmuns .right img
 {
     width: 369px;
+}
+
+.blog_container
+{
+    background-color: #191d20;
+}
+
+
+.post
+{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.post_title
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post_postby
+{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #d3d3d3 !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post_description
+{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff !important;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
