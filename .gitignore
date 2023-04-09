@@ -1,3 +1,6 @@
 *.zip
 JPG/
+/JPG
 PSD/
+/PSD
+*.psd
