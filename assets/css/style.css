@@ -374,7 +374,8 @@
 .gallery_container, 
 .menu_container,
 .team_container > div,
-.blog_container > div
+.blog_container > div,
+.customers > div
 {
     display: flex;
     flex-direction: column;
