@@ -1091,3 +1091,9 @@
     border: 1px solid #262c30;
     
 }
+
+.customers_card
+{
+    border: 1px solid #d4d4d4;
+    border-radius: 9px;
+}
