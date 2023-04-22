@@ -7,6 +7,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body
+{
+    background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 9762px;
+}
+
 .raleway_bold
 {
     font-family: 'Raleway', sans-serif;
@@ -375,17 +383,23 @@
 .menu_container,
 .team_container > div,
 .blog_container > div,
-.customers > div
+.customers
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.welcome_container.standard_section 
+{
+    padding-bottom: 100px;
+}
+
 .title
 {
     font-size: 40px;
     margin-bottom: 27px;
+    text-align: center;
 }
 
 .title_black, .title_black span
@@ -401,6 +415,11 @@
 .description_white
 {
     color: #fff !important;
+}
+
+.description_bdbcbc
+{
+    color: #bdbcbc !important;
 }
 
 .description
@@ -588,9 +607,13 @@
 {
     background-image: url(../images/whatis_img.fw.png);
     background-size: cover;
-    background-position: bottom;
     margin-left: 15px;
     padding-left: 0;
+}
+
+.gallery_container.standard_section
+{
+    padding-top: 100px;
 }
 
 .segments
@@ -704,7 +727,10 @@
 .menu_container.standard_section
 {
     margin-bottom: 0;
+    padding-bottom: 100px;
 }
+
+
 
 .row_menu
 {
@@ -769,6 +795,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+.other_services_container.standard_section
+{
+    padding-bottom: 105px;
+}
+
+
 
 .other_services_container
 {
@@ -850,7 +883,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 65px;
+    margin-top: 68px;
 
 }
 
@@ -987,9 +1020,19 @@
     width: 369px;
 }
 
+.team_container.standard_section 
+{
+    padding-bottom: 31px;
+}
 .blog_container
 {
     background-color: #191d20;
+    opacity: 0.3;
+}
+
+.blog_container.standard_section
+{
+    padding-bottom: 122px;
 }
 
 .posts
@@ -1003,7 +1046,7 @@
 .post
 {
     position: relative;
-    width: 370px;
+    width: 372px;
     display: flex;
     flex-direction: column;
     border: 1px solid #262c30;
@@ -1046,7 +1089,7 @@
 
 .post img
 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .post_title
@@ -1056,7 +1099,7 @@
     color: #fff !important;
     padding-left: 29px;
     padding-right: 29px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .post_postby
@@ -1067,7 +1110,7 @@
     color: #d3d3d3 !important;
     padding-left: 29px;
     padding-right: 29px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .post_description
@@ -1077,7 +1120,7 @@
     color: #fff !important;
     padding-left: 29px;
     padding-right: 29px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
 }
 
@@ -1086,22 +1129,74 @@
     position: absolute;
     background-color: #191d20;
     top: 100%;
-    left: 0%;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid #262c30;
     
 }
 
+.customers_width
+{
+    overflow: hidden;
+    margin-top: 68px;
+}
+.customers_cards
+{
+    display: flex;    
+}
+
 .customers_card
 {
+    display: flex;
+    min-width: 570px;
+    margin-right: 30px;
     border: 1px solid #d4d4d4;
     border-radius: 9px;
+    
+    padding-top: 29px;
+    padding-bottom: 21px;
 }
 
 .customer_pic
+{
+    width: 158px;
+    display: flex;
+    justify-content: center;
+    
+}
+.customer_pic_img
 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid #ff1200;
+}
+
+.customer_testimonial_container
+{
+    flex: 1;
+}
+
+.customer_testimonial_container h3
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -4px;
+}
+
+.customer_testimonial_container h4
+{
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff1200;
+
+}
+.customer_testimonial_container p
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #767070;
 }
