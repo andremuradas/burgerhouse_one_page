@@ -1027,7 +1027,6 @@ body
 .blog_container
 {
     background-color: #191d20;
-    opacity: 0.3;
 }
 
 .blog_container.standard_section
@@ -1142,13 +1141,14 @@ body
 }
 .customers_cards
 {
-    display: flex;    
+    display: flex;
 }
 
 .customers_card
 {
     display: flex;
     min-width: 570px;
+    height: fit-content;
     margin-right: 30px;
     border: 1px solid #d4d4d4;
     border-radius: 9px;
@@ -1166,10 +1166,13 @@ body
 }
 .customer_pic_img
 {
+    display: grid;
+    place-items: center;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid #ff1200;
+    overflow: hidden;
 }
 
 .customer_testimonial_container
