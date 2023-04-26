@@ -254,12 +254,20 @@ body
     border: 1px solid #fff;
     display: grid;
     place-items: center;
+    cursor: pointer;
 }
 
 .slide_btn i
 {
     color: #fff !important;
     font-size: 14px;
+}
+
+.slide_btn:hover
+{
+    background-color: #ff0000;
+    
+    border: 1px solid #ff0000;
 }
 
 .slide_content
