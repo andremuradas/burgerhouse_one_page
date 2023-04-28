@@ -9,10 +9,7 @@
 
 body
 {
-    background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 9762px;
+    background-color: #f9f9f9;
 }
 
 .raleway_bold
@@ -621,6 +618,15 @@ body
     background-color: #000;
 }
 
+.whatis_container .left .title
+{
+    text-align: left;
+}
+
+.whatis_container .left.standard_section
+{
+    padding-bottom: 100px;
+}
 
 .whatis_container .right
 {
@@ -630,10 +636,7 @@ body
     padding-left: 0;
 }
 
-.gallery_container.standard_section
-{
-    padding-top: 100px;
-}
+
 
 .segments
 {
@@ -746,6 +749,7 @@ body
 .menu_container.standard_section
 {
     margin-bottom: 0;
+    padding-top: 88px;
     padding-bottom: 100px;
 }
 
@@ -1226,6 +1230,7 @@ body
 
 .customers.standard_section
 {
+    padding-top: 92px;
     padding-bottom: 100px;
 }
 
