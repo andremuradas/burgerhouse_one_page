@@ -572,7 +572,8 @@ header
 .our_menu,
 .other_services_container,
 .team_container,
-.blog_container
+.blog_container,
+.customers_container
 {
     display: flex;
     flex-direction: column;
@@ -1283,6 +1284,170 @@ header
 {
     color: #767070 !important;
 }
+
+.customers_container
+{
+    margin-bottom: 100px;
+}
+
+.customers_container .description
+{
+    text-align: center;
+}
+
+.customers_width
+{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 73px;
+    margin-bottom: 50px;
+}
+
+.customers_cards
+{
+    display: flex;
+    width: fit-content;
+}
+
+.customer_card
+{
+    width: 570px;
+    height: fit-content;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.customer_pic
+{
+    width: 158px;
+    display: flex;
+    justify-content: center;
+    padding-top: 29px;
+    padding-bottom: 29px;
+
+}
+
+.customer_pic_img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff1200;
+}
+
+.customer_pic_img img
+{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+}
+
+
+.customer_testimonial_container
+{
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+
+.customer_name
+{
+    font-size: 20px;
+    color: #322d2d;
+    line-height: 26px;
+
+}
+
+.customer_city
+{
+    font-size: 14px;
+    color: #ff1200;
+    margin-bottom: 10px;
+}
+
+.customer_testimonial
+{
+    text-align: left;
+    color: #767070 !important;
+    line-height: 26px;
+
+}
+
+
+.dots
+{
+    display: flex;
+
+}
+
+.dot
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dot:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.dot:hover
+{
+    border: 1px solid #ff1200;
+    background-color: #ff1200;
+}
+
+
+.reservation
+{
+    margin: auto;
+    max-width: 1920px;
+    height: 180px;
+}
+
+.reservation_container
+{
+    height: inherit;
+    display: flex;
+}
+
+
+.reservation_right
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.reservation_left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 759px;
+}
+
+.reservation_left .fs_20
+{
+    margin-bottom: 10px;
+}
+
+
+.reservation_right .standart_btn
+{
+    margin-right: 10px;
+}
+
+.reservation_right .standart_btn:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
 
 /* .other_services_container .two_columns .column_left
 {
