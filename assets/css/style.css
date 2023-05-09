@@ -573,7 +573,8 @@ header
 .other_services_container,
 .team_container,
 .blog_container,
-.customers_container
+.customers_container,
+.partners
 {
     display: flex;
     flex-direction: column;
@@ -1448,6 +1449,47 @@ header
     margin-right: 0;
 }
 
+.partners> span
+{
+    text-align: center;
+}
+
+.partners_width
+{
+    width: 100%;
+    margin-top: 73px;
+    margin-bottom: 50px;
+}
+.partners_cards
+{
+    display: flex;
+}
+
+.partners_card
+{
+    width: 185px;
+    height: 80px;
+    border: 1px solid #d4d4d4;
+    display: grid;
+    place-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.partners_card:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.partners_card img
+{
+    opacity: 0.3;
+}
+
+.partners_card:hover img
+{
+    opacity: 1;
+}
 
 /* .other_services_container .two_columns .column_left
 {
