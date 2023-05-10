@@ -10,10 +10,10 @@ body
 {    
     color: #767070;
     background-color: #f9f9f9;
-    background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
+    /* background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 9762px;
+    height: 9762px; */
 }
 
 .display_none
@@ -63,6 +63,11 @@ body
 .fc_light
 {
     color: #fff;
+}
+
+.fc_light_2
+{
+    color: #bdbcbc;
 }
 
 .space_top
@@ -1015,11 +1020,14 @@ header
     line-height: 19px;
 }
 
-.team_container
+.team
 {
+    max-width: 1920px;
+    margin: auto;
     background-color: #ececec;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
 }
+
 
 .team_container .description
 {
@@ -1184,7 +1192,6 @@ header
 
 .blog
 {
-    /* opacity: 0.3; */
     max-width: 1920px;
     height: 882px;
     margin: auto;
@@ -1403,6 +1410,11 @@ header
     background-color: #ff1200;
 }
 
+.dot_active
+{
+    background-color: #ff1200;
+    border: 1px solid #ff1200;
+}
 
 .reservation
 {
@@ -1448,6 +1460,10 @@ header
 {
     margin-right: 0;
 }
+.partners
+{
+    margin-bottom: 100px;
+}
 
 .partners> span
 {
@@ -1489,6 +1505,111 @@ header
 .partners_card:hover img
 {
     opacity: 1;
+}
+
+.newsletter
+{
+    max-width: 1920px;
+    margin: auto;
+    background-color: #333739;
+}
+
+.newsletter_container
+{
+    height: 120px;
+}
+
+.newsletter .two_colmuns
+{
+    display: flex;
+    height: inherit;
+}
+
+.newsletter .two_colmuns .left
+{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter .two_colmuns .right
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.newsletter .two_colmuns .right input
+{
+    width: 375px;
+    height: 50px;
+    border: 1px solid #494e51;
+    background-color: #333739;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    padding-left: 17px;
+}
+
+.newsletter .two_colmuns .right input:focus
+{
+    outline: none;
+}
+
+.newsletter .two_colmuns .right input::placeholder
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: #6a6f72;
+}
+
+.newsletter .two_colmuns .right .btn_red
+{
+    background-color: #ff0000;
+    color: #fff !important;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    width: 200px;
+    height: 50px;
+}
+
+.parallax
+{
+    max-width: 1920px;
+    margin: auto;
+    height: 380px;
+    background-image: url(../images/parallax_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax .standart_btn
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.rights
+{
+    height: 100px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333739;
+    display: grid;
+    place-items: center;
 }
 
 /* .other_services_container .two_columns .column_left
