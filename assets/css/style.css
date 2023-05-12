@@ -1629,9 +1629,10 @@ header
 {
     body
     {    
-        background-image: url(../../JPG/29_BurgerHouse_Home_Tablet.jpg);
+        /* background-image: url(../../JPG/29_BurgerHouse_Home_Tablet.jpg);
         background-repeat: no-repeat;
         background-position: top;
+        background-position-y: 516px; */
         height: 9762px;
     }
 
@@ -1648,7 +1649,7 @@ header
         margin: auto;
     }
 
-    .standart_btn
+    .slider_width .standart_btn
     {
         font-size: 12px;
         width: 140px;
@@ -1729,6 +1730,219 @@ header
         margin-bottom: 9px;
     }
 
+    #slide01
+    {
+        background-image: url(../images/bg_slide_01_tablet.png);
+    }
+
+    #slide02
+    {
+        background-image: url(../images/bg_slide_02.png);
+    }
+
+    #slide03
+    {
+        background-image: url(../images/bg_slide_03.png);
+    }
+
+    .welcome_card
+    {
+        max-width: 220px;
+    }
+    .recommends_container.standard_width.space_top
+    {
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+
+    .recommends_container.standard_width .two_columns,
+    .what_is_container.standard_width .two_columns
+    {
+        flex-direction: row-reverse;
+        padding-top: 0px;
+    }
+
+    .recommends_container.standard_width .two_columns .column_left div,
+    .recommends_container.standard_width .two_columns .column_left img
+    {
+        display: none;
+    }
+
+    .recommends_container.standard_width .two_columns .column_left
+    {
+        background-image: url(../images/recommends_tablet.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 502px;
+        height: 348px;
+    }
+
+    .recommends_container .column_right
+    {
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 0px;
+        
+    }
+
+    .recommends_container .column_right .fs_40
+    {
+        width: 100%;
+        line-height: 30px;
+        margin-bottom: 33px;
+    }
+
+    .recommends_container .column_right .description 
+    {
+        flex: 1;
+    }
+
+
+    .what_is
+    {
+        margin-top: 100px;
+        height: 348px;
+    }
+
+    .what_is.bg_dark
+    {
+        background-color: #f9f9f9 !important;
+    }
+
+    .what_is_container.standard_width
+    {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+
+    .what_is .column_right
+    {
+        width: 502px;
+        height: 348px;
+    }
+
+    .what_is .column_right
+    {
+        background-image: url(../images/what_is_tablet.png);
+    }
+
+    .what_is .column_left
+    {
+        padding-top: 0;
+        padding-left: 17px;
+        padding-right: 10px;
+        align-items: center;
+    }
+
+    .what_is .column_left .fs_40
+    {
+        line-height: 26px;
+        margin-bottom: 35px;
+    }
+    
+    .what_is .column_left .fs_40.fc_light
+    {
+        color: #322d2d !important;
+    }
+
+    .what_is .column_left span
+    {
+        width: 100%;
+    }
+
+    .what_is .column_left .description 
+    {
+        flex: 1;
+    }
+
+    .what_is .column_left .btn_white_to_red
+    {
+        border: 1px solid #ff1200;
+        color: #ff1200 !important;
+    }
+
+    .what_is .column_left .btn_white_to_red:hover
+    {
+        
+        border: 1px solid #ff1200 !important;
+        background-color: #ff1200 !important;
+        color: #fff !important;
+    }
+
+    .gallery_images
+    {
+        display: grid;
+        width: 100%;
+        flex-wrap: nowrap;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .gallery_img
+    {
+        max-width: 230px;
+        max-height: 230px;
+        border: 2px solid #ececec;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    .gallery_img img
+    {
+        width: 226px;
+        height: 226px;
+    }
+
+    .overlay_red
+    {
+        width: 226px;
+        height: 226px;
+    }
+
+    .see_what
+    {
+        max-width: 1024px;
+        height: 325px;
+        margin-top: 100px;
+        background-image: url(../images/see_what.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gallery_container, .our_menu_container
+    {
+        align-items: normal;
+    }
+    .our_menu .standart_btn.btn_red_to_red
+    {
+        margin: auto;
+    }
+
+    .others_services> .column_left
+    {
+        width: 390px;
+        padding-top: 10px;
+    }
+
+    .others_services .column_left img
+    {
+        width: 370px;
+    }
+
+    .team_img
+    {
+        scale: 0.8;
+    }
+    .team_card
+    {
+        width: 216px;
+    }
+
+    .team_name
+    {
+        margin-top: 0;
+    }
 }
 
 /*Mobile version*/
