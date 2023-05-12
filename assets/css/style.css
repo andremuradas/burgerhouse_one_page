@@ -1627,7 +1627,19 @@ header
 /*Tablet version*/
 @media (min-width: 768px) and (max-width: 1024px)
 {
-    
+    body
+    {    
+        background-image: url(../../JPG/29_BurgerHouse_Home_Tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 9762px;
+    }
+
+    main
+    {
+    opacity: 0.3;
+    }
+
     .standard_width
     {
         max-width: 1024px;
@@ -1653,6 +1665,22 @@ header
         font-size: 20px !important;
     }
 
+    .logo_bg, .logo_bg img
+    {
+        width: 270px;
+    }
+
+    .back_logo_bg img
+    {
+        width: 300px;
+    }
+
+    .logo
+    {
+        top: calc(50% - 13px);
+    }
+
+
     .slider_width
     {
         position: relative;
@@ -1667,6 +1695,17 @@ header
         height: 470px;
     }
 
+    #slideLeft
+    {
+        left: 43px;
+    }
+
+    #slideRight
+    {
+        right: 43px;
+    }
+
+
     #slide01
     {
         background-position: center;
@@ -1675,8 +1714,19 @@ header
 
     #slide01 .two_columns .column_left
     {
-        width: 480px;
+        width: 490px;
         flex: none;
+    }
+
+    #slide01 .two_columns .column_right .standart_btn 
+    {
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    #slide01 .two_columns .column_right span 
+    {
+        margin-bottom: 9px;
     }
 
 }
