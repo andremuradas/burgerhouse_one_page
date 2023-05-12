@@ -1623,3 +1623,65 @@ header
     display: grid;
     place-items: center;
 }
+
+/*Tablet version*/
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    
+    .standard_width
+    {
+        max-width: 1024px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: auto;
+    }
+
+    .standart_btn
+    {
+        font-size: 12px;
+        width: 140px;
+        height: 35px;
+    }
+
+    .fs_25
+    {
+        font-size: 15px !important;
+    }
+
+    .fs_36
+    {
+        font-size: 20px !important;
+    }
+
+    .slider_width
+    {
+        position: relative;
+        margin: auto;
+        max-width: 1024px;
+        height: 470px;
+        overflow: hidden;
+    }
+    .slide
+    {
+        min-width: 1024px;
+        height: 470px;
+    }
+
+    #slide01
+    {
+        background-position: center;
+        background-size: cover;
+    }
+
+    #slide01 .two_columns .column_left
+    {
+        width: 480px;
+        flex: none;
+    }
+
+}
+
+/*Mobile version*/
+@media (max-width: 320px)
+{
+}
