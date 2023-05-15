@@ -1636,10 +1636,6 @@ header
         height: 9762px;
     }
 
-    main
-    {
-    opacity: 0.3;
-    }
 
     .standard_width
     {
@@ -1681,6 +1677,21 @@ header
         top: calc(50% - 13px);
     }
 
+    .menu li a
+    {
+        font-size: 16px !important;
+    }
+
+    .menu nav .menu_left
+    {
+        margin-right: 10px;
+    }
+
+    .menu nav .menu_right
+    {
+        margin-left: 10px;
+    }
+
 
     .slider_width
     {
@@ -1689,6 +1700,11 @@ header
         max-width: 1024px;
         height: 470px;
         overflow: hidden;
+    }
+
+    .slider_container
+    {
+        margin-left: -2048px;
     }
     .slide
     {
@@ -1730,6 +1746,34 @@ header
         margin-bottom: 9px;
     }
 
+
+    #slide02 .two_columns
+    {
+        width: 790px;
+    }
+
+    #slide02 .two_columns .column_left .standart_btn 
+    {
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    #slide02 .two_columns .column_left span 
+    {
+        margin-bottom: 9px;
+    }
+
+    #slide03 .standart_btn 
+    {
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    #slide03 span 
+    {
+        margin-bottom: 9px;
+    }
+
     #slide01
     {
         background-image: url(../images/bg_slide_01_tablet.png);
@@ -1737,12 +1781,14 @@ header
 
     #slide02
     {
-        background-image: url(../images/bg_slide_02.png);
+        background-image: url(../images/bg_slide_02_tablet.png);
     }
+
+    
 
     #slide03
     {
-        background-image: url(../images/bg_slide_03.png);
+        background-image: url(../images/bg_slide_03_tablet.png);
     }
 
     .welcome_card
@@ -1943,6 +1989,57 @@ header
     {
         margin-top: 0;
     }
+
+    .blog_card
+    {
+        width: 300px;
+    }
+
+    .blog_card .blog_card_img img
+    {
+        width: inherit;
+    }
+    .blog_card_img
+    {
+        height: fit-content;
+    }
+
+    .customer_card
+    {
+        width: 860px;
+    }
+
+    .reservation
+    {
+        margin-top: 90px;
+    }
+
+    .reservation_left .fs_20
+    {
+        font-size: 16px !important;
+    }
+
+    .partners_card
+    {
+        width: 150px;
+        height: 60px;
+    }
+
+    .partners_card img
+    {
+        width: 120px;
+    }
+
+    .newsletter
+    {
+        margin-top: 90px;
+    }
+
+    .newsletter .two_colmuns .right input
+    {
+        width: 280px;
+    }
+
 }
 
 /*Mobile version*/
