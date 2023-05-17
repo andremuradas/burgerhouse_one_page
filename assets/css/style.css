@@ -376,6 +376,11 @@ header
     position: absolute;
 }
 
+.mobile_navigation
+{
+    display: none;
+}
+
 .arrow_navigation
 {
     display: none;
@@ -418,6 +423,9 @@ header
     font-weight: 600;
     line-height: 24px;
 }
+
+
+
 
 .slider_width
 {
@@ -2050,13 +2058,30 @@ header
 
     body
     {    
-        background-image: url(../../JPG/30_BurgerHouse_Home_Mobile_nav.jpg);
+        background-image: url(../../JPG/30_BurgerHouse_Home_Mobile.jpg);
         background-repeat: no-repeat;
         background-position: top;
-        /* background-position-y: 516px; */
+        background-position-y: 0px;
         height: 5146px;
     }
 
+
+    .fs_25
+    {
+        font-size: 7px !important;
+    }
+
+    .fs_36
+    {
+        font-size: 9px !important;
+    }
+
+    .slider_width .standart_btn
+    {
+        font-size: 8px;
+        width: 80px;
+        height: 20px;
+    }
 
     .standard_width
     {
@@ -2069,7 +2094,7 @@ header
     header,
     main
     {
-        /* opacity: 0.3; */
+        opacity: 0.3;
     }
 
     .top_container
@@ -2160,6 +2185,94 @@ header
     .cart_menu_mobile img
     {
         margin-right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    .slider_width
+    {
+        position: relative;
+        top: 40px;
+        margin: auto;
+        max-width: 320px;
+        height: 280px;
+        overflow: hidden;
+    }
+
+
+    .slide
+    {
+        min-width: 320px;
+        height: 280px;
+    }
+
+    #slideLeft
+    {
+        display: none;
+    }
+
+    #slideRight
+    {
+        display: none;
+    }
+
+
+    #slide01
+    {
+        background-position: center;
+        background-size: cover;
+    }
+
+    #slide01 .two_columns .column_left
+    {
+        width: 140px;
+        flex: none;
+    }
+
+    #slide01 .two_columns .column_right .standart_btn,
+    #slide02 .two_columns .column_left .standart_btn,
+    #slide03 .standart_btn
+
+    {
+        margin-top: 13px;
+        margin-bottom: 3px;
+    }
+
+    #slide01 .two_columns .column_right span,
+    #slide02 .two_columns .column_left span,
+    #slide03 span 
+    {
+        margin-bottom: 6px;
+    }
+
+
+    #slide02 .two_columns
+    {
+        width: 790px;
+    }
+
+
+    #slide01
+    {
+        background-image: url(../images/bg_slide_01_mobile.png);
+    }
+
+    #slide02
+    {
+        background-image: url(../images/bg_slide_02_mobile.png);
+    }
+
+    
+
+    #slide03
+    {
+        background-image: url(../images/bg_slide_03_mobile.png);
     }
 
 
