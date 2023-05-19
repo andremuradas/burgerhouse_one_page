@@ -2063,6 +2063,7 @@ header
 
     body
     {    
+        overflow-x: hidden; 
         /* background-image: url(../../JPG/30_BurgerHouse_Home_Mobile.jpg);
         background-repeat: no-repeat;
         background-position: top;
@@ -2417,15 +2418,33 @@ header
         align-items: flex-start;
     }
 
-    .gallery_menu .standart_btn_150
+    .gallery_menu_width,
+    .our_menu_menu_width
+    {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+    }
+
+    .gallery_menu .standart_btn_150,
+    .our_menu_menu .standart_btn_150
     {
         width: 130px;
+        min-width: 130px;
         height: 35px;
+    }
+
+    .gallery_menu .standart_btn_150:nth-child(1),
+    .our_menu_menu .standart_btn_150:nth-child(1)
+    {
+        margin-left: 10px;
     }
     
     .gallery_images
     {
         justify-content:initial;
+        margin-top: 85px;
     }
 
     .gallery_img
@@ -2440,6 +2459,60 @@ header
     {
         width: 296px;
         height: 296px;
+    }
+
+    .see_what_container span br
+    {
+        display: none;
+    }
+
+    .see_what_container .standart_btn
+    {
+        margin-top: 35px;
+        margin-bottom: 0px;
+    }
+
+    .see_what 
+    {
+        width: 320px;
+        height: 338px;
+        line-height: 38px;
+    }
+
+    .our_menu_row
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .item_name,
+    .item_description 
+    {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px;
+    }
+
+    .item_description 
+    {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        align-items: baseline;
+    }
+
+    .item_price 
+    {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+
+    .our_menu_row .fs_20
+    {
+        font-size: 16px !important;
     }
 
 }
