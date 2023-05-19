@@ -705,6 +705,11 @@ header
     margin-bottom: 140px;
 }
 
+.img_recommends_mobile,
+.img_what_is_mobile
+{
+    display: none;
+}
 .recommends_container .column_left
 {
     position: relative;
@@ -2058,13 +2063,22 @@ header
 
     body
     {    
-        background-image: url(../../JPG/30_BurgerHouse_Home_Mobile.jpg);
+        /* background-image: url(../../JPG/30_BurgerHouse_Home_Mobile.jpg);
         background-repeat: no-repeat;
         background-position: top;
-        background-position-y: 0px;
-        height: 5146px;
+        background-position-y: 1198px;
+        height: 5146px; */
     }
 
+    .space_top
+    {
+        padding-top: 54px;
+    }
+
+    .bottom_title 
+    {
+        margin-bottom: 36px;
+    }
 
     .fs_25
     {
@@ -2074,6 +2088,16 @@ header
     .fs_36
     {
         font-size: 9px !important;
+    }
+
+    .fs_40
+    {
+        font-size: 28px !important;
+    }
+
+    .center_text
+    {
+        text-align: center;
     }
 
     .slider_width .standart_btn
@@ -2094,13 +2118,20 @@ header
     header,
     main
     {
-        opacity: 0.3;
+        /* opacity: 0.3; */
     }
 
     .top_container
     {
         display: none;
     }
+
+    .navigation 
+    {
+        border-top: 0;
+        border-bottom: 0;
+    }
+
 
     .menu_left,
     .menu_right,
@@ -2198,8 +2229,7 @@ header
     .slider_width
     {
         position: relative;
-        top: 40px;
-        margin: auto;
+        margin-top: 40px;
         max-width: 320px;
         height: 280px;
         overflow: hidden;
@@ -2268,12 +2298,148 @@ header
         background-image: url(../images/bg_slide_02_mobile.png);
     }
 
-    
 
     #slide03
     {
         background-image: url(../images/bg_slide_03_mobile.png);
     }
 
+
+    .welcome_cards
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome_card
+    {
+        max-width: 270px;
+        margin-bottom: 40px;
+    }
+
+    .welcome_card:nth-last-child(1)
+    {
+        margin-bottom: 0px;
+    }
+
+
+    .welcome_card_title
+    {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-size: 20px;
+        color: #322d2d !important;
+    }
+
+    .welcome_card_description
+    {
+        font-size: 14px;
+        line-height: 18px;
+        color: #767070 !important;
+    }
+
+    .recommends_container .column_left,
+    .what_is .column_right
+    {
+        display: none;
+    }
+
+    .recommends_container .column_right,
+    .what_is .column_left
+    {
+        padding-left: 0px;
+        padding-top: 0px;
+        align-items: center;
+    }
+
+    .recommends_container .column_right .fs_40 
+    {
+        width: 100%;
+    }
+
+    .img_recommends_mobile,
+    .img_what_is_mobile
+    {
+        display: block;
+        width: 300px;
+        height: 190px;
+    }
+
+    .recommends_container .description,
+    .what_is_container .description 
+    {
+        padding-top: 30px;
+    }
+
+    .what_is_container .two_columns
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what_is.bg_dark
+    {
+        background-color: transparent !important;
+        height: auto;
+        max-width: 320px;
+    }
+
+    .what_is .column_left
+    {
+        padding-top: 80px;
+    }
+
+    .what_is_container .two_columns .column_left .fc_light
+    {
+        color: #322d2d;
+    }
+
+    .what_is_container .two_columns .column_left .fc_light_2 
+    {
+        color: #767070;;
+    }
+
+    .what_is_container .btn_white_to_red
+    {
+        border: 1px solid #ff1200;
+        color: #ff1200 !important;
+    }
+
+    .what_is_container .btn_white_to_red:hover
+    {
+        border: 1px solid #ff1200 !important;
+        background-color: #ff1200 !important;
+        color: #fff !important;
+    }
+
+    .gallery_container
+    {
+        align-items: flex-start;
+    }
+
+    .gallery_menu .standart_btn_150
+    {
+        width: 130px;
+        height: 35px;
+    }
+    
+    .gallery_images
+    {
+        justify-content:initial;
+    }
+
+    .gallery_img
+    {
+        width: 300px;
+        height: 300px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .gallery_img .overlay_red,
+    .gallery_img img 
+    {
+        width: 296px;
+        height: 296px;
+    }
 
 }
