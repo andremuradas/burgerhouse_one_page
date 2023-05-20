@@ -2555,5 +2555,82 @@ header
     {
         padding: 15px;
     }
+    .team
+    {
+        padding-bottom: 80px;
+    }
+
+    .team_cards
+    {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .team_card
+    {
+        margin-bottom: 20px;
+    }
+
+    .team_img 
+    {
+        min-width: 220px;
+        min-height: 220px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .team_overlay_red,
+    .team_img img
+    {
+        width: calc(220px - 4px);
+        height: calc(220px - 4px);
+    }
+
+    .skill_container.two_columns
+    {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .skill_progress
+    {
+        width: 100%;
+    }
+
+    #skillProgress1
+    {
+        
+        width: calc(100% * 0.95);
+    }
+
+    #skillProgress2 
+    {
+        width: calc(100% * 0.86);
+    }
+
+    #skillProgress3 
+    {
+        width: calc(100% * 0.90);
+    }
+
+    #skillProgress4 
+    {
+        width: calc(100% * 0.83);
+    }
+
+    #skillProgress5 
+    {
+        width: calc(100% * 0.80);
+    }
+    
+    .skill_container.two_columns .column_right img
+    {
+        width: 280px;
+    }
+
+    .skill_container.two_columns .column_right 
+    {
+        padding-left: 0px;
+    }
+
 
 }
