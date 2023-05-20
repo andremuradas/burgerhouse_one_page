@@ -10,10 +10,10 @@ body
 {    
     color: #767070;
     background-color: #f9f9f9;
-    background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
+    /* background-image: url(../../JPG/01_BurgerHouse_OnePage.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 9762px;
+    height: 9762px; */
 }
 
 .display_none
@@ -2756,7 +2756,57 @@ header
         text-align: center;
         padding: 10px;
     }
-}
 
-/* 
- */
+    .reservation
+    {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .reservation_container 
+    {
+        flex-direction: column;
+    }
+
+    .reservation_left
+    {
+        width: 100%;
+    }
+
+    .reservation_left span
+    {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .reservation_left span:nth-child(1)
+    {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        line-height: 38px;
+    }
+
+    .reservation_left span:nth-last-child(1)
+    {
+        padding-bottom: 30px;
+        line-height: 26px;
+    }
+
+    .reservation_right
+    {
+        flex-direction: column;
+    }
+
+    .reservation_right .standart_btn
+    {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .reservation_right .standart_btn:nth-last-child(1)
+    {
+        margin-bottom: 80px;
+    }
+}
