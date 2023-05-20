@@ -2632,5 +2632,30 @@ header
         padding-left: 0px;
     }
 
+    .blog
+    {
+        height: auto;
+    }
 
+    .blog_cards
+    {
+        flex-direction: column;
+    }
+
+    .blog_card 
+    {
+        max-width: 300px;
+        width: 300px;
+        margin-bottom: 80px;
+    }
+
+    .blog_card_img
+    {
+        height: 202px;
+    }
+
+    .blog_card_img img
+    {
+        width: inherit;
+    }
 }
