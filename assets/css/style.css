@@ -2658,4 +2658,20 @@ header
     {
         width: inherit;
     }
+
+    .customer_card
+    {
+        width: 100%;
+    }
+
+    .customer_card.two_columns
+    {
+        flex-direction: column-reverse;
+    }
+
+    .customer_card
+    {
+        width: 300px;
+        margin-right: 10px;
+    }
 }
