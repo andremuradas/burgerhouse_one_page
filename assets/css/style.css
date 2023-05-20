@@ -2477,6 +2477,7 @@ header
         width: 320px;
         height: 338px;
         line-height: 38px;
+        margin-top: 80px;
     }
 
     .our_menu_row
@@ -2513,6 +2514,46 @@ header
     .our_menu_row .fs_20
     {
         font-size: 16px !important;
+    }
+
+    .others_services 
+    {
+        margin-top: 80px;
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .other_services_container> .two_columns
+    {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .other_services_container> .two_columns .column_left img
+    {
+        width: 280px;
+    }
+
+    .other_services_container> .two_columns> .column_left
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .other_services_container> .two_columns> .column_right
+    {
+        margin-top: 15px;
+    }
+    
+    .services_row,
+    .service_description
+    {
+        width: 100%;
+    }
+
+    .service_description
+    {
+        padding: 15px;
     }
 
 }
