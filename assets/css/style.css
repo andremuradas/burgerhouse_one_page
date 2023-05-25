@@ -2166,6 +2166,7 @@ header
         border-color: #ffffff transparent transparent transparent;
         cursor: pointer;
         transition: all ease 0.3s;
+        filter: drop-shadow(0 7px 7px rgba(0,1,1,0.35));
 
     }
   
@@ -2192,6 +2193,7 @@ header
         flex-direction: column;
         align-items: center;
         padding-top: 30px;
+        filter: drop-shadow(0 7px 7px rgba(0,1,1,0.35));
     }
 
     .mobile_item
@@ -2832,6 +2834,37 @@ header
     .partners .dots
     {
         display: none;
+    }
+
+    .newsletter_container
+    {
+        height: auto;
+    }
+
+    .newsletter .two_colmuns,
+    .newsletter .two_colmuns .right
+    {
+        flex-direction: column;
+    }
+
+    .newsletter .two_colmuns .right input
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .newsletter .two_colmuns .left
+    {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .newsletter .two_colmuns .right .btn_white_to_red
+    {
+        margin-top: 15px;
+        margin-bottom: 45px;
     }
 
 }
