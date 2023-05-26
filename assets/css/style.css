@@ -1653,18 +1653,8 @@ header
 }
 
 /*Tablet version*/
-@media (min-width: 768px) and (max-width: 1024px)
+@media (min-width: 1024px) and (max-width: 1024px)
 {
-    body
-    {    
-        /* background-image: url(../../JPG/29_BurgerHouse_Home_Tablet.jpg);
-        background-repeat: no-repeat;
-        background-position: top;
-        background-position-y: 516px; */
-        /* height: 9762px; */
-    }
-
-
     .standard_width
     {
         max-width: 1024px;
@@ -2068,7 +2058,7 @@ header
 }
 
 /*Mobile version*/
-@media (max-width: 320px)
+@media (max-width: 1023px)
 {
 
     body
@@ -2126,11 +2116,6 @@ header
         margin: auto;
     }
 
-    header,
-    main
-    {
-        /* opacity: 0.3; */
-    }
 
     .top_container
     {
@@ -2425,6 +2410,7 @@ header
         color: #fff !important;
     }
 
+
     .gallery_container
     {
         align-items: flex-start;
@@ -2433,10 +2419,10 @@ header
     .gallery_menu_width,
     .our_menu_menu_width
     {
-        width: 100%;
+        width: 320px;
         overflow: hidden;
-        position: absolute;
-        left: 0;
+        position: relative;
+        left: -10px;
     }
 
     .gallery_menu .standart_btn_150,
@@ -2456,7 +2442,7 @@ header
     .gallery_images
     {
         justify-content:initial;
-        margin-top: 85px;
+        margin-top: 40px;
     }
 
     .gallery_img
