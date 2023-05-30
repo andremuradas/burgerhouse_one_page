@@ -96,6 +96,14 @@ serviceBtn.forEach(serviceDescription =>
     {
         serviceDescription.addEventListener('click', () =>
         {
-            console.log(serviceDescription.nextSibling);
+            if(document.getElementById(serviceDescription.id).nextElementSibling.classList.contains("show"))
+            {
+                document.getElementById(serviceDescription.id).nextElementSibling.classList.remove("show");
+            }
+            else
+            {
+                document.getElementById(serviceDescription.id).nextElementSibling.classList.add("show");
+            }
+            
         });
     });

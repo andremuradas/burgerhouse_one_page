@@ -973,8 +973,9 @@ header
     max-width: 1920px;
     margin: auto;
     margin-top: 100px;
-    height: 761px;
+    min-height: 669px;
     text-align: center;
+    padding-bottom: 90px;
 }
 
 .other_services_container> .two_columns
@@ -1038,11 +1039,22 @@ header
     width: 570px;
     border: 1px solid #494e51;
     text-align: left;
-    padding: 37px;
+    padding: 0px 37px;
     color: #bdbcbc !important;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif !important;
-    line-height: 19px;
+    line-height: 19px;overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.service_description.show
+{
+    height: auto;
+    opacity: 1;
+    padding: 37px;
+    
 }
 
 .team
