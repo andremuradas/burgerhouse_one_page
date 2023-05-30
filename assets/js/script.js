@@ -38,23 +38,6 @@ btnLeft.addEventListener('click', slidePrevious);
 btnRigth.addEventListener('click', slideFoward);
 
 
-let timer = automaticSlideShow();
-
-function automaticSlideShow()
-{
-    let timer;
-    return {
-        start() {
-            timer = setInterval(slideFoward, 4000);
-        },
-        stop() {
-            clearInterval(timer);
-        }
-    }
-}
-
-timer.start();
-
 
 
 
@@ -89,4 +72,30 @@ function checkCount()
 }
 
 
+let timer = automaticSlideShow();
 
+function automaticSlideShow()
+{
+    let timer;
+    return {
+        start() {
+            timer = setInterval(slideFoward, 4000);
+        },
+        stop() {
+            clearInterval(timer);
+        }
+    }
+}
+
+timer.start();
+
+let serviceBtn = document.querySelectorAll(".services_row");
+
+
+serviceBtn.forEach(serviceDescription =>
+    {
+        serviceDescription.addEventListener('click', () =>
+        {
+            console.log(serviceDescription.nextSibling);
+        });
+    });
