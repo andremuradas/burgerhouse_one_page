@@ -131,15 +131,33 @@ function dotsArea()
     
 }
 
-
 let dotIndicator = document.querySelectorAll('.customers_container .dots .dot');
+dotIndicator[0].classList.add("dot_active");
+
+
+function clearDots()
+{
+    for(let i = 0; i < totalSlides; i++)
+    {
+        dotIndicator[i].classList.remove("dot_active");
+    }
+}
+
+
+
+
 
 dotIndicator.forEach(clickDot => 
     {
+        
+
         clickDot.addEventListener('click', (e) => 
         {
+            clearDots()
             let dotIndex = e.target.getAttribute("data")
-            console.log(dotIndex);
+
+            customerCards.style.marginLeft = ((-customersSlideSize - 30)*dotIndex) + "px";
+            e.target.classList.add("dot_active");
         });
     });
 
