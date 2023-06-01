@@ -107,3 +107,48 @@ serviceBtn.forEach(serviceDescription =>
             
         });
     });
+
+
+
+// Customers slide show section
+
+let customerCards = document.querySelector('.customers_cards');
+let customersTotalSize = customerCards.clientWidth;
+let customersSlideSize = document.querySelector('.customers_width').clientWidth;
+let totalSlides = Math.round(customersTotalSize / customersSlideSize);
+let dots = document.querySelector('.customers_container .dots');
+
+dotsArea()
+function dotsArea()
+{
+    for(let i = 0; i < totalSlides; i++)
+    {
+        let newDot = document.createElement("div");
+        newDot.classList.add("dot");
+        newDot.setAttribute("data", i);
+        dots.appendChild(newDot);
+    }
+    
+}
+
+
+let dotIndicator = document.querySelectorAll('.customers_container .dots .dot');
+
+dotIndicator.forEach(clickDot => 
+    {
+        clickDot.addEventListener('click', (e) => 
+        {
+            let dotIndex = e.target.getAttribute("data")
+            console.log(dotIndex);
+        });
+    });
+
+
+// let currentSlideMargin = 0
+
+// let currentDot = document.querySelector('#dot'+currentSlideMargin);
+// function customerSlide()
+// {
+    
+//     customerCards.style.marginLeft = `calc(-(${customersSlideSize}px + 30px))`;
+// }
