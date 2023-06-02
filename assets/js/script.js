@@ -118,6 +118,7 @@ let customersSlideSize = document.querySelector('.customers_width').clientWidth;
 let totalSlides = Math.round(customersTotalSize / customersSlideSize);
 let dots = document.querySelector('.customers_container .dots');
 
+//Calculating and inserting dots in the page
 dotsArea()
 function dotsArea()
 {
@@ -131,6 +132,7 @@ function dotsArea()
     
 }
 
+//Active the first dot when page is loaded
 let dotIndicator = document.querySelectorAll('.customers_container .dots .dot');
 dotIndicator[0].classList.add("dot_active");
 
@@ -143,30 +145,64 @@ function clearDots()
     }
 }
 
-
-
-
+//Identify size of margin right of each customer card
+let customerCard = document.querySelector('.customer_card');
+let customerCardStyle = getComputedStyle(customerCard);
+let customerCardMargin = customerCardStyle.marginRight;
+let customerSlidePosition = 0
 
 dotIndicator.forEach(clickDot => 
     {
-        
-
         clickDot.addEventListener('click', (e) => 
         {
-            clearDots()
-            let dotIndex = e.target.getAttribute("data")
-
-            customerCards.style.marginLeft = ((-customersSlideSize - 30)*dotIndex) + "px";
+            clearDots();
+            timerCustomer.stop();
+            let dotIndex = e.target.getAttribute("data");
+            customerSlidePosition = parseInt(dotIndex);
+            customerCards.style.marginLeft = ((-customersSlideSize - parseInt(customerCardMargin))*dotIndex) + "px";
             e.target.classList.add("dot_active");
+            timerCustomer.start();
         });
     });
 
+//Customer slide show
 
-// let currentSlideMargin = 0
+function customerGoFoward()
+{
+    customerSlidePosition += 1;
 
-// let currentDot = document.querySelector('#dot'+currentSlideMargin);
-// function customerSlide()
-// {
+    if(customerSlidePosition < totalSlides)
+    {
+        customerSlidePosition;
+    }
+    else
+    {
+        customerSlidePosition = 0;
+    }
     
-//     customerCards.style.marginLeft = `calc(-(${customersSlideSize}px + 30px))`;
-// }
+    clearDots();
+    customerCards.style.marginLeft = ((-customersSlideSize - parseInt(customerCardMargin))*customerSlidePosition) + "px";
+    let dotToActive = document.querySelector('[data="'+customerSlidePosition+'"]');
+    dotToActive.classList.add("dot_active");
+}
+
+
+let timerCustomer = CustomerAutomaticSlideShow();
+
+function CustomerAutomaticSlideShow()
+{
+    let timerCustomer;
+    return {
+        start() {
+            timerCustomer = setInterval(customerGoFoward, 4000);
+        },
+        stop() {
+            clearInterval(timerCustomer);
+        }
+    }
+}
+
+timerCustomer.start();
+
+
+// Partners slide show section

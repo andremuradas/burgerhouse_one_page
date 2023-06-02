@@ -1402,6 +1402,7 @@ header
 {
     grid-column: 2 / 3;
     padding-bottom: 21px;
+    padding-right: 21px;
 }
 .customer_testimonial_outline
 {
@@ -2035,7 +2036,7 @@ header
 
     .customer_card
     {
-        width: 860px;
+        width: 467px;
     }
 
     .reservation
@@ -2739,6 +2740,7 @@ header
         grid-row: 1 / 2;
         border: 1px solid #d4d4d4;
         padding-bottom: 0px;
+        padding-right: 0px;
         position: relative;
     }
 
