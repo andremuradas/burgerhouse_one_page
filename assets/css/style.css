@@ -1525,10 +1525,13 @@ header
     width: 100%;
     margin-top: 73px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .partners_cards
 {
     display: flex;
+    width: fit-content;
+    transition: all ease 0.3s;
 }
 
 .partners_card
@@ -1538,7 +1541,7 @@ header
     border: 1px solid #d4d4d4;
     display: grid;
     place-items: center;
-    margin-right: 15px;
+    margin-right: 12px;
     cursor: pointer;
 }
 

@@ -182,7 +182,7 @@ function customerGoFoward()
     
     clearDots();
     customerCards.style.marginLeft = ((-customersSlideSize - parseInt(customerCardMargin))*customerSlidePosition) + "px";
-    let dotToActive = document.querySelector('[data="'+customerSlidePosition+'"]');
+    let dotToActive = document.querySelector('.customers_container [data="'+customerSlidePosition+'"]');
     dotToActive.classList.add("dot_active");
 }
 
@@ -206,3 +206,94 @@ timerCustomer.start();
 
 
 // Partners slide show section
+let partnersCards = document.querySelector('.partners_cards');
+let partnersTotalSize = partnersCards.clientWidth;
+let partnersSlideSize = document.querySelector('.partners_width').clientWidth;
+let partnersTotalSlides = Math.round(partnersTotalSize / partnersSlideSize);
+let partnersDots = document.querySelector('.partners .dots');
+
+//Calculating and inserting dots in the page
+PartnersDotsArea()
+function PartnersDotsArea()
+{
+    for(let i = 0; i < partnersTotalSlides; i++)
+    {
+        let PartnersnNewDot = document.createElement("div");
+        PartnersnNewDot.classList.add("dot");
+        PartnersnNewDot.setAttribute("data", i);
+        partnersDots.appendChild(PartnersnNewDot);
+    }
+    
+}
+
+//Active the first dot when page is loaded
+let partnersDotIndicator = document.querySelectorAll('.partners .dots .dot');
+partnersDotIndicator[0].classList.add("dot_active");
+
+
+function PartnerClearDots()
+{
+    for(let i = 0; i < partnersTotalSlides; i++)
+    {
+        partnersDotIndicator[i].classList.remove("dot_active");
+    }
+}
+
+//Identify size of margin right of each customer card
+let PartnerCard = document.querySelector('.partners_card');
+let PartnerCardStyle = getComputedStyle(PartnerCard);
+let PartnerCardMargin = PartnerCardStyle.marginRight;
+let PartnerSlidePosition = 0
+
+partnersDotIndicator.forEach(clickPartnerDot => 
+    {
+        clickPartnerDot.addEventListener('click', (e) => 
+        {
+            clearDots();
+            timerPartner.stop();
+            let PartnerDotIndex = e.target.getAttribute("data");
+            PartnerSlidePosition = parseInt(PartnerDotIndex);
+            partnersCards.style.marginLeft = ((-partnersSlideSize - parseInt(PartnerCardMargin))*PartnerDotIndex) + "px";
+            e.target.classList.add("dot_active");
+            timerPartner.start();
+        });
+    });
+
+    
+//Partner slide show
+
+function partnerGoFoward()
+{
+    PartnerSlidePosition += 1;
+
+    if(PartnerSlidePosition < partnersTotalSlides)
+    {
+        PartnerSlidePosition;
+    }
+    else
+    {
+        PartnerSlidePosition = 0;
+    }
+    
+    PartnerClearDots();
+    partnersCards.style.marginLeft = ((-partnersSlideSize - parseInt(PartnerCardMargin))*PartnerSlidePosition) + "px";
+    let PartnerDotToActive = document.querySelector('.partners [data="'+PartnerSlidePosition+'"]');
+    PartnerDotToActive.classList.add("dot_active");
+}
+
+let timerPartner = partnerAutomaticSlideShow();
+
+function partnerAutomaticSlideShow()
+{
+    let timerPartner;
+    return {
+        start() {
+            timerPartner = setInterval(partnerGoFoward, 4000);
+        },
+        stop() {
+            clearInterval(timerPartner);
+        }
+    }
+}
+
+timerPartner.start();
