@@ -306,7 +306,7 @@ function partnerAutomaticSlideShow()
     }
 }
 
-timerPartner.start();
+// timerPartner.start();
 
 
 //Scroll smooth
