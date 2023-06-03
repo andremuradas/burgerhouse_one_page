@@ -26,6 +26,16 @@ function menuMobileOpenClose()
     
 };
 
+let menuItem = document.querySelectorAll('.mobile_item');
+
+menuItem.forEach(closeAfter => 
+    {
+        closeAfter.addEventListener('click', () =>
+        {
+            menuMobileOpenClose();
+        });
+    });
+
 //Slide Show
 let btnLeft = document.querySelector('#slideLeft');
 let btnRigth = document.querySelector('#slideRight');
@@ -249,7 +259,7 @@ partnersDotIndicator.forEach(clickPartnerDot =>
     {
         clickPartnerDot.addEventListener('click', (e) => 
         {
-            clearDots();
+            PartnerClearDots();
             timerPartner.stop();
             let PartnerDotIndex = e.target.getAttribute("data");
             PartnerSlidePosition = parseInt(PartnerDotIndex);
@@ -297,3 +307,102 @@ function partnerAutomaticSlideShow()
 }
 
 timerPartner.start();
+
+
+//Scroll smooth
+
+let headerHeight = 0
+if(window.innerWidth >= 1024)
+{
+    headerHeight = document.querySelector('header').clientHeight;
+}
+else
+{
+    headerHeight = document.querySelector('header').clientHeight + 55;
+}
+
+
+function scrollFunction1() 
+{
+    
+    let e = document.getElementById("sec1").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
+function scrollFunction2() 
+{
+    let e = document.getElementById("sec2").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+
+function scrollFunction3() 
+{
+    let e = document.getElementById("sec3").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+
+function scrollFunction4() 
+{
+    let e = document.getElementById("sec4").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+
+function scrollFunction5() 
+{
+    let e = document.getElementById("sec5").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+
+function scrollFunction6() 
+{
+    let e = document.getElementById("sec6").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+
+function scrollFunction7() 
+{
+    let e = document.getElementById("sec7").offsetTop;
+    window.scroll
+    ({
+        top: e-headerHeight, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
+}
+

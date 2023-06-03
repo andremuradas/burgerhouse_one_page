@@ -215,7 +215,9 @@ body
 
 header
 {
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
     z-index: 99;
 }
 
@@ -338,6 +340,7 @@ header
     font-size: 18px;
     font-weight: 500;
     color: #726666;
+    cursor: pointer;
 }
 
 .menu li a:hover
@@ -425,7 +428,10 @@ header
 }
 
 
-
+/* main
+{
+    margin-top: 125px;
+} */
 
 .slider_width
 {
@@ -865,7 +871,7 @@ header
     display: none;
     width: 266px;
     height: 266px;
-    z-index: 99;
+    z-index: 2;
     background-color: rgba(255, 18, 0, 0.85);
     justify-content: center;
     align-items: center;
@@ -1114,7 +1120,7 @@ header
     height: 266px;    
     border-radius: 50%;
     position: absolute;
-    z-index: 99;
+    z-index: 2;
     background-color: rgba(255, 18, 0, 0.85);
     justify-content: center;
     align-items: center;

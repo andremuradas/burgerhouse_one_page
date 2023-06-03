@@ -39,13 +39,13 @@
                     
                     <nav>
                         <ul class="menu_left">
-                            <li><a href="#">Home</a></li>
+                            <li><a onclick="scrollFunction1()">Home</a></li>
                             <i class="fas fa-star"></i>
-                            <li><a href="#">About</a></li>
+                            <li><a onclick="scrollFunction2()">About</a></li>
                             <i class="fas fa-star"></i>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a onclick="scrollFunction3()">Gallery</a></li>
                             <i class="fas fa-star"></i>
-                            <li><a href="#">Menu</a></li>
+                            <li><a onclick="scrollFunction4()">Menu</a></li>
                         </ul>
                         <div class="logo_container">
                             <div class="logo_bg">
@@ -61,11 +61,11 @@
                             
                         </div>
                         <ul class="menu_right">
-                            <li><a href="#">Services</a></li>
+                            <li><a onclick="scrollFunction5()">Services</a></li>
                             <i class="fas fa-star"></i>
-                            <li><a href="#">Team</a></li>
+                            <li><a onclick="scrollFunction6()">Team</a></li>
                             <i class="fas fa-star"></i>
-                            <li><a href="#">Blog</a></li>
+                            <li><a onclick="scrollFunction7()">Blog</a></li>
                             <i class="fas fa-star"></i>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -75,13 +75,13 @@
             
         </section>
         <section class="mobile_navigation">
-            <div class="mobile_item">Home</div>
-            <div class="mobile_item">About</div>
-            <div class="mobile_item">Gallery</div>
-            <div class="mobile_item">Menu</div>
-            <div class="mobile_item">Services</div>
-            <div class="mobile_item">Team</div>
-            <div class="mobile_item">Blog</div>
+            <div onclick="scrollFunction1()" class="mobile_item">Home</div>
+            <div onclick="scrollFunction2()" class="mobile_item">About</div>
+            <div onclick="scrollFunction3()" class="mobile_item">Gallery</div>
+            <div onclick="scrollFunction4()" class="mobile_item">Menu</div>
+            <div onclick="scrollFunction5()" class="mobile_item">Services</div>
+            <div onclick="scrollFunction6()" class="mobile_item">Team</div>
+            <div onclick="scrollFunction7()" class="mobile_item">Blog</div>
             <div class="mobile_item">Contact</div>
             <div class="cart_menu_mobile"><img src="assets/images/basket.png"><span>Cart (<span class="raleway_bold">2</span>) items for<span class="raleway_bold"> $30,00</span></span></div>
             <div class="arrow_navigation"><i class="fas fa-chevron-down"></i></div>
@@ -91,7 +91,7 @@
         </div>
     </header>
     <main>
-        <section class="slider_width">
+        <section id="sec1" class="slider_width">
             <div id="slideLeft" class="slide_btn"><i class="fas fa-chevron-left"></i></div>
             <div id="slideRight" class="slide_btn"><i class="fas fa-chevron-right"></i></div>
             <div class="slider_container">
@@ -136,7 +136,7 @@
             </div>
             
         </section>
-        <section class="welcome_container standard_width space_top">
+        <section id="sec2" class="welcome_container standard_width space_top">
             <span class="fs_40 fc_dark bottom_title center_text">
                 Welcome to
                 <span class="raleway_bold">BurgerHouse</span>
@@ -211,7 +211,7 @@
             </div>
         </section>
 
-        <section class="Highlights_container standard_width space_top">
+        <section id="sec3" class="Highlights_container standard_width space_top">
             <span class="fs_40 raleway_bold fc_dark bottom_title center_text">
                 Highlights 
                 <span class="raleway_regular">in our gallery</span>
@@ -255,7 +255,7 @@
                 <div class="standart_btn btn_white_to_red">Popular dishes</div>
             </div>
         </section>
-        <section class="our_menu standard_width space_top">
+        <section id="sec4" class="our_menu standard_width space_top">
             <span class="fs_40 fc_dark bottom_title">
                 See 
                 <span class="raleway_bold">our menu</span>
@@ -329,7 +329,7 @@
 
         </section>
 
-        <section class="others_services bg_dark space_top">
+        <section id="sec5" class="others_services bg_dark space_top">
             <div class="other_services_container standard_width">
                 <span class="fs_40 fc_light bottom_title">
                     BurgerHouse 
@@ -380,7 +380,7 @@
             </div>
         </section>
 
-        <section class="team space_top">
+        <section id="sec6" class="team space_top">
             <div class="team_container standard_width">
                 <span class="fs_40 raleway_regular fc_dark bottom_title">
                     Meet our 
@@ -481,7 +481,7 @@
         
         </section>
 
-        <section class="blog bg_dark space_top">
+        <section id="sec7" class="blog bg_dark space_top">
             <div class="blog_container standard_width">
                 <span class="fs_40 fc_light raleway_bold bottom_title center_text">
                     Latest posts 
