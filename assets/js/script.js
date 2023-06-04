@@ -272,6 +272,7 @@ partnersDotIndicator.forEach(clickPartnerDot =>
     
 //Partner slide show
 
+
 function partnerGoFoward()
 {
     PartnerSlidePosition += 1;
@@ -286,7 +287,17 @@ function partnerGoFoward()
     }
     
     PartnerClearDots();
-    partnersCards.style.marginLeft = ((-partnersSlideSize - parseInt(PartnerCardMargin))*PartnerSlidePosition) + "px";
+
+    if(screen.width == 1024)
+    {
+        partnersCardsMarginLeft = ((-partnersSlideSize - parseInt(PartnerCardMargin)+4));
+    }
+    else if(screen.width < 1024)
+    {
+        partnersCardsMarginLeft = (-200);
+    }
+    
+    partnersCards.style.marginLeft = (partnersCardsMarginLeft*PartnerSlidePosition) + "px";
     let PartnerDotToActive = document.querySelector('.partners [data="'+PartnerSlidePosition+'"]');
     PartnerDotToActive.classList.add("dot_active");
 }
@@ -306,7 +317,7 @@ function partnerAutomaticSlideShow()
     }
 }
 
-// timerPartner.start();
+timerPartner.start();
 
 
 //Scroll smooth
