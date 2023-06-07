@@ -296,6 +296,10 @@ function partnerGoFoward()
     {
         partnersCardsMarginLeft = (-200);
     }
+    else if(screen.width > 1024)
+    {
+        partnersCardsMarginLeft = ((-partnersSlideSize - parseInt(PartnerCardMargin)));
+    }
     
     partnersCards.style.marginLeft = (partnersCardsMarginLeft*PartnerSlidePosition) + "px";
     let PartnerDotToActive = document.querySelector('.partners [data="'+PartnerSlidePosition+'"]');
